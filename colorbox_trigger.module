@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_views_data_alter().
+ */
+function colorbox_trigger_views_data_alter(array &$data) {
+  $data['views']['colorbox_trigger_inline'] = [
+    'title' => t('Colorbox trigger inline'),
+    'field' => [
+      'id' => 'colorbox_trigger_field',
+    ],
+  ];
+}
